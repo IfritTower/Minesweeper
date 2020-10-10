@@ -1,0 +1,161 @@
+body {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 30px 20000fr 30px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: black;
+}
+
+header {
+	grid-area: 1 / 1 / 2 / 2;
+	/*background-color: purple;*/
+	display: flex;
+	flex-direction: rows;
+	justify-content: space-around;
+}
+
+main {
+	grid-area: 2/1/3/2;
+	/*background-color: blue;*/
+}
+
+footer {
+	grid-area: 3/1/4/2;
+	color: grey;
+	top-margin: 10000px;
+	display: flex;
+	justify-content: center;
+	/*background-color: orange;*/
+}
+
+button.nonbomb.notHidden {
+	background-color: white;
+	color: blue;
+}
+
+button.nonbomb.notHidden.zeroProx {
+	background-color: black;
+	color: black;
+}
+
+button.nonbomb.notHidden.oneProx {
+	background-color: #ffb3ba;
+	color: #ffb3ba;
+}
+
+button.nonbomb.notHidden.twoProx {
+	background-color: #ffdfba;
+	color: #ffdfba;
+}
+
+button.nonbomb.notHidden.threeProx {
+	background-color: #ffffba;
+	color: #ffffba;
+}
+
+button.nonbomb.notHidden.fourProx {
+	background-color: 	#baffc9;
+	color: #baffc9;
+}
+
+button.nonbomb.notHidden.fiveProx {
+	background-color: 	#bae1ff;
+	color: #bae1ff;
+}
+
+button.nonbomb.notHidden.sixProx {
+	background-color: #f2a2e8;
+	color: #f2a2e8;
+}
+
+button.nonbomb.notHidden.sevenProx {
+	background-color: white;
+	color: red;
+}
+
+button.nonbomb.notHidden.eightProx {
+	background-color: white;
+	color: pink;
+}
+
+button.bomb.notHidden {
+	background-color: red;
+	color: red;
+}
+
+button.hidden {
+	background-color: grey;
+	color: grey;
+}
+
+button.marked.hidden {
+	background-color: yellow;
+	color: yellow;
+}
+
+body.failure {
+	/*background-color: red;*/
+}
+
+#gameOverText {
+	color: #400000;
+	font-size: 40px;
+}
+
+body.success {
+	/*background-color: green;*/
+}
+
+#gameWonText {
+	color: #002D00;
+	font-size: 40px;
+}
+
+#gameBoardView {
+	border: black solid 10px;
+}
+
+#gameBoardView > button {
+	min-width: 45px;
+	min-height: 45px;
+	padding-bottom: .25em;
+	padding-top: .25em;
+	border: grey 3px;
+	background: black;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+input {
+	background-color: #1E1E1E;
+	border: #1E1E1E solid 1px;
+	color: grey;
+}
+
+header {
+	color: grey;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+main {
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+#gameWrapperDiv {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+div.highScoreUnit {
+	/*background-color:white;*/
+	display: flex;
+	justify-content: space-between;
+	color: grey;
+}
+
+div.highScoreUnit > div {
+	background-color: #1E1E1E;
+}

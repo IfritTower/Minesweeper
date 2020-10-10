@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Minesweeper</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="a2alt/minesweeper.css">
+		<script src="http://www.cs.unc.edu/Courses/comp426-f17/hearts/jquery-3.2.1.js"></script>
+		<script src="a2alt/minesweeper.js"></script>
+	</head>
+	<body>
+		<header>
+			<div id="timer"></div>
+			<form action="">
+				Width:<input id="gameWidth" type="number" name="widthInput">
+				Height<input id="gameHeight" type="number" name="heightInput">
+				Number of Bombs:<input id="numStartBombs" type="number" name="startBombsInput">
+				<button id=" newGameButton" type="button">Reset Game</button>
+			</form>
+			<div>
+				<span id="bombsRemaining"></span> left
+			</div>
+		</header>
+		<main>
+			<div id="gameWrapperDiv">
+				<div id="gameBoardView"></div>
+				<div id="gameResultDiv"></div>
+			</div>
+			<div id="highScoreBoard"></div>
+		</main>
+		<footer>
+			<p>Developed by Juan Herrera, 2017</p>
+		</footer>
+	</body>
+</html>
